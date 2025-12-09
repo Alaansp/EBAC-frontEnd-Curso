@@ -2,11 +2,15 @@
 @breakpointMobile: ~"(max-width: 767px)";
 @breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
 
+.marginBottom8 {
+    margin-bottom: 8px;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -33,13 +37,26 @@ header {
 
     .profile-avatar {
         display: block;
-        margin: 0 auto;
+        margin: 0 auto 24px;
         border-radius: 100px;
     }
 }
 
 .profile-bio {
-    .profile-bio-name {
+    text-align: center;
+
+    &-name {
         font-size: 16px;
+        .marginBottom8();
+    }
+
+    &-subtitle {
+        font-size: 14px;
+        .marginBottom8();
+    }
+
+    &-description {
+        font-size: 12px;
+        opacity: .7;
     }
 }
